@@ -7,13 +7,34 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Review from './components/Review/Review';
+import Inventory from './components/Inventory/Inventory';
+import NotFound from './components/NotFound/NotFound';
 
 
 function App() {
   return (
     <div>
       <Header></Header>
-      <Shop></Shop>
+      <Router>
+        <Switch>
+          <Route path='/shop'>
+            <Shop></Shop>
+          </Route>
+          <Route path='/review'>
+            <Review></Review>
+          </Route>
+          <Route path='/inventory'>
+            <Inventory></Inventory>
+          </Route>
+          <Route exact path='/'>
+            <Shop></Shop>  {/*default */}
+          </Route>
+          <Route path='*'>
+            <NotFound></NotFound>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
