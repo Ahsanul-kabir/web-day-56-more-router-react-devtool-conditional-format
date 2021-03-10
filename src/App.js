@@ -1,3 +1,4 @@
+// day 55, and 56 ami ei same repo te korsi
 import './App.css';
 import Header from './components/Header/Header';
 import Shop from './components/Shop/Shop';
