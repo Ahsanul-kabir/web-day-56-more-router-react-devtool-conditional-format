@@ -10,6 +10,7 @@ const Cart = (props) => {
     for (let i = 0; i < cart.length; i++) {
         const product = cart[i];
         totalPrice = totalPrice + product.price * product.quantity;
+        // debugger;
     }
 
     let shpping = 0; // defaul dore nilam
@@ -24,7 +25,7 @@ const Cart = (props) => {
     }
 
     const tax = (totalPrice / 10).toFixed(2);
-    const grandTotal = (totalPrice + shpping + Number(tax).toFixed(2))
+    const grandTotal = (totalPrice + shpping + Number(tax)).toFixed(2)
 
     const formatNumber = num => {
         const precision = num.toFixed(2);
