@@ -5,6 +5,8 @@ import Product from '../Product/Product';
 
 const ProductDetails = () => {
     const {productKey} = useParams();
+    // useParams pass kora parameter ke receive korar jonno use kora hoy
+
     const product = fakeData.find(pd => pd.key === productKey)
 
     return (

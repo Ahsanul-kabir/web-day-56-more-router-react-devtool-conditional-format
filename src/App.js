@@ -33,6 +33,8 @@ function App() {
             <Shop></Shop>  {/*default */}
           </Route>
           <Route path='/product/:productKey'>
+            {/* ei khane ":" use kora hoy parameter ke dynamic korar jonno
+            ar ":" cara use korle same name e parameter hisabe pharano lagbo */}
             <ProductDetails></ProductDetails>
           </Route>
           <Route path='*'>
