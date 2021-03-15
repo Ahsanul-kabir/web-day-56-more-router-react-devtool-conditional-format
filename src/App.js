@@ -1,4 +1,8 @@
 // day 55, and 56 ami ei same repo te korsi
+
+// 38-8 react router nested routes: Just give only idea about
+// nested routes : https://reactrouter.com/web/guides/quick-start
+
 import './App.css';
 import Header from './components/Header/Header';
 import Shop from './components/Shop/Shop';
